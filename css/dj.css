@@ -429,12 +429,31 @@ h2, h3, h4 {
 #contact-a .formulaire {
     background: #dededf;
     padding: 3rem 4rem;
+    
     /* grid-area: formulaire; */
 }
-#contact-a .global .text-fields {
+#contact-a .global .text-fields .form-group{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;  
+}
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+#contact-a .global .text-fields i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+}
+#contact-a .global .text-fields small {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
 }
 
 #contact-a .text-fields .text-input {
