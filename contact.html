@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/4b10bd60e7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="css/dj.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <title>DJ WOLF | OFFICIEL</title>
+</head>
+<body>
+    <header id="header-about">
+        <div class="container">
+            <nav id="main-nav">
+                    <img src="img/djLogo.png" alt="LOGo"  id="logo"/>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="events.html">Evenements</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+    
+                </ul>
+                <div id="icons"></div>  
+            </nav>
+        </div>
+    </header>
+         <!-- Section Contact Formulaire -->
+    <section id="contact-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contactez Moi</h2>
+            <div class="bottom-line"></div>
+            <p class="texte">Pour toutes vos préstations, vous pouvez nous contacter par ici ...</p>
+            <div class="global">
+                <div class="formulaire">
+                    <p class="texte text-center">Renseignez vos informations ci-dessous : </p>
+                    <form>
+                        <div class="text-fields">
+                            <input type="text" class="text-input name-input" name="name" placeholder="Entrer votre nom" required>
+                            <input type="text" class="text-input subject-input" name="subject" placeholder="Entrer votre objet" required>
+                            <input type="text" class="text-input phone-input" name="phone" placeholder="Phone" required>
+                            <select class="text-input choix-input" name="choix" required>
+                                <option value="option0"></option>
+                                <option value="option1">Mariage</option>
+                                <option value="option2">Anniversaire</option>
+                                <option value="option3">Autres...</option>
+                            </select>
+                            <input type="date" class="text-input date-input" placeholder="date" name="date" required>
+                            <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" required>
+                            <input type="text" class="text-input where-input" name="lieu" placeholder="Ou vivez vous ?" required>
+                            <textarea class="text-input message-input" name="message"  placeholder="Entrer votre message ..." required>
+                            </textarea>
+                        </div>
+                        <button type="submit" class="btn-dark">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-info py-3">
+                    <p class="texte text-center">Comment nous retrouver</p>
+                    <div class="widget">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <h3>Email</h3>
+                        <p>Djwolf.Dj@gmail.com</p>
+                    </div>
+
+                    <div class="widget">
+                        <i class="fas fa-phone fa-2x"></i>
+                        <h3>Numéro de Télephone</h3>
+                        <p>066 60 04 25</p>
+                    </div>
+
+                    <div class="widget">
+                        <i class="fas fa-location-dot fa-2x"></i>
+                        <h3>Adresse</h3>
+                        <p>ANNECY. 129 AVENUE DE GENEVE. 74000, France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2023 All Rights Reserved</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

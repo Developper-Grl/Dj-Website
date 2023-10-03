@@ -1,0 +1,93 @@
+/* media queries : Home */
+
+@media (max-width: 800px) {
+    #header-home {
+        height: 30rem;
+    } 
+}
+
+@media (max-width: 500px) {
+    /* #main-nav  {
+        flex-direction: column;
+        align-items: center;
+        
+    } */
+    
+    #main-nav li {
+        padding: 1rem;   
+    }
+    #icons {
+        display: block;
+        color: #fff;
+        z-index: 2;
+    }
+
+    #icons:before {
+        content: "\2630";
+    }
+    .active #icons:before {
+        content: "\2715";
+    }
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background: #454545;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+      }
+    nav.active ul {
+        left: 0;
+    }
+    #header-home, #header-about{
+        height: 13rem;
+    }
+    .header-content {
+        display: none;
+    }
+
+    #latest-news .services,
+    #pack .packs-group,
+    #about-testis .testimonials,
+    #events .items,
+    #contact-a .global {
+        grid-template-columns: 1fr;
+    }
+
+    #latest-news .services,  #pack .packs-group, #about-infos .about-info{
+        justify-items: center;
+    }
+    #about-infos .about-info {
+        grid-template-areas: "bioimage" "bio";
+    }
+    #about-progress {
+        margin-bottom: 2rem;
+    }
+    .testimonials ul{
+        justify-content: center; /* Centre horizontalement */
+        align-items: center;
+    }
+
+    #main-footer {
+        height: 7rem; 
+    }
+
+    #main-footer .footer-content {
+        flex-direction: column;
+        height: 5rem;
+        padding: 1rem;
+    }
+
+}
+
+@media (max-height: 580px) {
+    #header-home .header-content {
+        padding-top: 3rem; } 
+
+}
+
+@media (max-height: 330px) {
+    #header-home .header-content h1 {
+      font-size: 2rem; } }
