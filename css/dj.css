@@ -432,7 +432,7 @@ h2, h3, h4 {
     
     /* grid-area: formulaire; */
 }
-#contact-a .global .text-fields .form-group{
+#contact-a .form-group{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-bottom: 1rem;  
@@ -443,17 +443,39 @@ h2, h3, h4 {
     padding-bottom: 15px;
   }
 
-#contact-a .global .text-fields i {
+.form-group i {
     position: absolute;
     top: 10px;
     right: 10px;
     visibility: hidden;
 }
-#contact-a .global .text-fields small {
+.form-group small {
     position: absolute; 
     bottom: 0;
     left: 0;
     visibility: hidden;
+}
+.form-group.success input {
+    border-color: #2ecc71;
+}
+
+.form-group.error input {
+    border-color: #f5140d;
+}
+.form-group.success i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible;
+    
+}
+
+.form-group.error i.fa-exclamation {
+    color: #f5140d;
+    visibility: visible;
+}
+
+.form-group.error small {
+    color: #f5140d;
+    visibility: visible;
 }
 
 #contact-a .text-fields .text-input {
