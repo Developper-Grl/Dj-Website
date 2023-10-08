@@ -110,6 +110,7 @@ function formVerify() {
   const phoneValue = phone.value.trim();
   const choiceValue = choice.value;
   const dateValue = date.value;
+  const placeValue = place.value.trim();
   const messageValue = message.value.trim();
 
   //verifications 
@@ -167,15 +168,31 @@ function formVerify() {
       let error="Vous devez selectionner une option!";
       setError(choice, error);
     }else{
-      setSuccess(choice);
+      setBorder(choice);
     }
 
     //Calendrier verification 
     if(dateValue === ''){
       let error= "Vous devez choisir une date";
       setError(date, error);
-    }else if(dateValue === "date"){
-      setSuccess(date);
+    }else{
+      setBorder(date);
+    }
+
+    //Lieu verification 
+    if(placeValue === ''){
+      let error = "Ce champ ne peut pas être vide !";
+      setError(place, error);
+    }else{
+      setSuccess(place);
+    }
+
+    //Message verification 
+    if(messageValue === ''){
+      let error = "Ce champ ne peut pas être vide !";
+      setError(message, error);
+    }else{
+      setSuccess(message);
     }
 
 }
@@ -195,4 +212,9 @@ function setSuccess(element) {
 
   //ajout classesuccess
   form.className = 'form-group success';
+}
+
+function setBorder(element){
+  const form= element.parentElement;
+  form.className = 'form-group border';
 }
