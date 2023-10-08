@@ -484,6 +484,9 @@ h2, h3, h4 {
     border-radius: 5px;
     background: #fff;
 }
+.form-group.border .date-input:valid, .form-group.border .choix-input:valid {
+    border: #2ecc71 2px solid;
+}
 
 #contact-a .text-fields .message-input {
     height: 100px;
